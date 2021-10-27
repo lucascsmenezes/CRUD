@@ -52,8 +52,8 @@ const saveClient = () => {
             celular: document.getElementById('celular').value,
             cidade: document.getElementById('cidade').value,
             cep: document.getElementById('cep').value
-
         }
+
         const index = document.getElementById('nome').dataset.index
         if (index == 'new') {
             createClient(client)

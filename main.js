@@ -32,11 +32,10 @@ const createClient = (client) => {
 }
 
 const isValidFields = () => {
-    return document.getElementById('form').reportValidity()
+    return document.getElementById('form').reportValidity();
 }
 
 //Interação com o layout
-
 const clearFields = () => {
     const fields = document.querySelectorAll('.modal-field')
     fields.forEach(field => field.value = "")
@@ -53,7 +52,6 @@ const saveClient = () => {
             cidade: document.getElementById('cidade').value,
             cep: document.getElementById('cep').value
         }
-
         const index = document.getElementById('nome').dataset.index
         if (index == 'new') {
             createClient(client)
@@ -112,9 +110,7 @@ const editClient = (index) => {
 
 const editDelete = (event) => {
     if (event.target.type == 'button') {
-
         const [action, index] = event.target.id.split('-')
-
         if (action == 'edit') {
             editClient(index)
         } else {

@@ -1,3 +1,3 @@
-# CRUD do Curso de Fernando Leonid com foco na interação do localStorage
+# Simples Crud
 
 ##O deploy foi utilizado Netlify -> https://goofy-montalcini-accb2f.netlify.app/
